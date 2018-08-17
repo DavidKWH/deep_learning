@@ -1,7 +1,7 @@
 Deep Learning Exploration
 =========================
 
-This repository contains my initial exploration into recent deep learning architectures for unsupervised learning i.e. GAN, VAE, etc.  There will be more to come as I continue to bring these techniques to wireless communications, which is my area of expertise.
+This repository contains my initial exploration into recent deep learning architectures for unsupervised learning i.e. GANs, BiGANs, VAEs, etc.  There will be more to come as I continue to bring these techniques to wireless communications, which is my area of expertise.
 
 ## Dependencies 
 
