@@ -15,13 +15,13 @@ pip3 install git+https://github.com/veeresht/CommPy.git
 
 ### Reference test scenario and architecture
 
-I have decided to test algorithms with the mixture of Gaussian inputs as this is simple to generate and it is a reasonably hard case for unsupervised learning.  The two patterns I use repeatedly is the 8-symbol constellation, uniformly separated points on the unit circle (8-PSK in comm. speak) and the 16-QAM constellation.
+I have decided to test algorithms with the mixture of Gaussian inputs as this is simple to generate and it is a reasonably hard case for unsupervised learning.  The two patterns I use repeatedly are the 8-symbol constellation, uniformly separated points on the unit circle (8-PSK in comm. speak) and the 16-QAM constellation.
 
 For simplicity, the reference architecture for both generator and discriminator in GANs, encoder and decoder in BiGANs or VAEs will be a three hidden layer MLP with tanh activation function only.
 
 ### Spectral normalization with GAN (SN-GAN)
 
-I need to modify the Lipschitz norm to K=3.  This is natural consequence of tanh tending to a linear function if the support of the input is restricted to a small neighborhood about the origin, which is what happens when the largest singular value is limited to 1.  The discriminator becomes linear when the spectral norm is too small. 
+I need to modify the Lipschitz norm to K=3.  This is a natural consequence of tanh tending to a linear function if the support of the input is restricted to a small neighborhood about the origin, which is what happens when the largest singular value is limited to 1.  The discriminator becomes linear when the spectral norm is too small. 
 
 ### Wesserstein WGAN with gradient penalty (WGAN-GP) 
 
