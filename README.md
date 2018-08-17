@@ -5,7 +5,7 @@ This repository contains my initial exploration into recent deep learning archit
 
 ## Dependencies 
 
-I made a concise effort to use as few tools as is necessary for research.  All code are made to run with Python 3.5+ and tensorflow 1.10 and their dependencies.  One extra library I use for comm. related features is CommPy
+I made a conscious effort to use as few tools as is necessary for research.  All code are made to run with Python 3.5+ and tensorflow 1.10 and their dependencies.  One extra library I use for comm. related features is CommPy
 
 ```
 pip3 install git+https://github.com/veeresht/CommPy.git
