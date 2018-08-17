@@ -22,3 +22,7 @@ For simplicity, the reference architecture for both generator and discriminator 
 ### Spectral normalization with GAN (SN-GAN)
 
 I need to modify the Lipschitz norm to K=3.  This is natural consequence of tanh tending to a linear function if the support of the input is restricted to a small neighborhood about the origin, which is what happens when the largest singular value is limited to 1.  The discriminator becomes linear when the spectral norm is too small. 
+
+### Wesserstein WGAN with gradient penalty (WGAN-GP) 
+
+I really like the Earth-Mover distance and how graident penalty does not restrict the activation inputs to a small neighborhood around zero (not to mention the sample code works out of the box =).  However as Miyato et al. pointed out this is more computationally intense compared to their method.  
