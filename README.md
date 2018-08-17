@@ -13,7 +13,7 @@ pip3 install git+https://github.com/veeresht/CommPy.git
 
 ## Implementation Notes
 
-### General test scenario and architecture
+### Reference test scenario and architecture
 
 I have decided to test algorithms with the mixture of Gaussian inputs as this is simple to generate and it is a reasonably hard case for unsupervised learning.  The two pattern I use repeatedly is the 8-symbol constellation, uniformed separate points on the unit circle (8-PSK in comm. speak) and the 16-QAM constellation.
 
