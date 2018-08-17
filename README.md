@@ -19,7 +19,7 @@ I have decided to test algorithms with the mixture of Gaussian inputs as this is
 
 For simplicity, the reference architecture for both generator and discriminator in GANs, encoder and decoder in BiGANs or VAEs will be a three hidden layer MLP with tanh activation function only.
 
-### Spectral normalization with GAN (SN-GAN)
+### Spectral normalization for GAN (SN-GAN)
 
 I need to modify the Lipschitz norm to K=3.  This is a natural consequence of tanh tending to a linear function if the support of the input is restricted to a small neighborhood about the origin, which is what happens when the largest singular value is limited to 1.  The discriminator becomes linear when the spectral norm is too small. 
 
