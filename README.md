@@ -1,5 +1,4 @@
-Deep Learning Exploration
-=========================
+# Deep Learning Exploration
 
 This repository contains my initial exploration into recent deep learning architectures for unsupervised learning i.e. GANs, BiGANs, VAEs, etc.  There will be more to come as I continue to bring these techniques to wireless communications, which is my area of expertise.
 
@@ -21,8 +20,8 @@ For simplicity, the reference architecture for both generator and discriminator 
 
 ### Spectral normalization for GAN (SN-GAN)
 
-I need to modify the Lipschitz norm to K=3.  This is a natural consequence of tanh tending to a linear function if the support of the input is restricted to a small neighborhood about the origin, which is what happens when the largest singular value is limited to 1.  The discriminator becomes linear when the spectral norm is too small. 
+I need to modify the spectral norm for the weight matrices to K=3.  This is a natural consequence of tanh tending to a linear function if the support of the input is restricted to a small neighborhood about the origin, which is what happens when the largest singular value is limited to 1.  The discriminator becomes linear when the spectral norm is too small. 
 
 ### Wesserstein WGAN with gradient penalty (WGAN-GP) 
 
-I really like the Earth-Mover distance and how gradient penalty does not restrict activation inputs to a small neighborhood around zero (not to mention the sample code works out of the box =).  However as Miyato et al. pointed out this is more computationally intensive compared to their method.  
+I really like the Earth-Mover distance and how gradient penalty does not restrict activation inputs to a small neighborhood around zero.  I'm currently debating whether SN-GAN offers a computational advantage over WGAN-GP.  There is no doubt SN-GAN is easier to implement.
